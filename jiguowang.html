@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outer{
+            width: 100%;
+        }
+        .head{
+            width: 100%;
+        }
+        .head-top{
+            width: 100%;
+            background: white;
+            margin-bottom: 10px;
+            float: left;
+            position: relative;
+            margin-left: 200px;
+
+        }
+        .head-a{
+            font-size: 18px;
+            color: black;
+            opacity: 0.6;
+            margin-right: 40px;
+            position: relative;
+            left: 90px;
+            bottom: -10px;
+            display: inline-block;
+        }
+        .head-a:hover {
+            color: red;
+        }
+        .b:hover{
+            color: red;
+        }
+        .c:hover{
+            color: red;
+        }
+        .d:hover{
+            color: red;
+        }
+        .e:hover{
+            color: red;
+        }
+        .header-img{
+            width: 100%;
+            position: relative;
+            left: 80px;
+            bottom: 0;
+            float: left;
+            display: inline-block;
+        }
+        .header-img1{
+            display: inline-block;
+            position: relative;
+            left: 1050px;
+            bottom: 0;
+            float: left;
+        }
+        .header-but{
+            display: inline-block;
+            position: relative;
+            left: 1075px;
+            bottom: 0;
+            float: left;
+        }
+
+        .head-bottom {
+            display: inline-block;
+            position: relative;
+        }
+        .head_word1{
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            position: absolute;
+            right: 100px;
+            top: 50px;
+        }
+        .head_word2{
+            position: absolute;
+            right: 110px;
+            top: 110px;
+            margin-left:10px;
+            color: white;
+            font-size: 16px;
+            display: inline-block;
+        }
+        .h-a{
+            background: navajowhite;
+            width: 90px;
+            height: 30px;
+            display: inline-block;
+            text-align: center;
+            padding-top:5px;
+        }
+        .h-b{
+            background: navajowhite;
+            width: 70px;
+            height: 30px;
+            display: inline-block;
+            text-align: center;
+            padding-top:5px;
+        }
+        .h-c{
+            background: navajowhite;
+            width: 60px;
+            height: 30px;
+            display: inline-block;
+            text-align: center;
+            padding-top:5px;
+        }
+        .head_word3{
+            position: absolute;
+            right: 100px;
+            top: 165px;
+            margin-left:10px;
+            color: white;
+            font-size: 18px;
+        }
+        .head_word4{
+            position: absolute;
+            right: 100px;
+            top: 210px;
+            background: red;
+            font-size: 23px;
+            color: white;
+            width: 230px;
+            height: 35px;
+            text-align: center;
+            padding-top:5px;
+        }
+
+        .center{
+            width: 100%;
+            position: relative;
+        }
+        .center-top-img{
+            position: absolute;
+            display: inline-block;
+        }
+
+        .center-top-word{
+            height: 376px;
+            width:320px;
+            border: 1px solid gainsboro;
+            position: relative;
+            top: 60px;
+            display: inline-block;
+            left:40px;
+            margin-left: 10px;
+        }
+        .center-top-word-a{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .center-top-word-b{
+            border: 1px solid orangered;
+            font-size: 14px;
+            width: 60px;
+            height: 23px;
+            border-radius:5px;
+            display: inline-block;
+            color: orangered;
+            position: relative;
+            left: 70px;
+            top: 20px;
+            margin-left: 20px;
+            text-align: center;
+            padding-top: 8px;
+        }
+        .center-top-word-c{
+            font-size:18px;
+            display:inline-block;
+            position: relative;
+            left: -48px;
+            top:60px;
+        }
+        .center-top-word-d{
+            font-size:16px;
+            color: orangered;
+            position: relative;
+            left: 125px;
+            top:60px;
+            opacity: 0.8;
+        }
+        .center-center{
+            position: relative;
+            background: gainsboro;
+            top: 465px;
+            height: 800px;
+            width: 100%;
+            display: inline-block;
+            opacity: 0.8;
+        }
+        .center-top-word-top{
+            height: 330px;
+            width:320px;
+            position: relative;
+            top: 80px;
+            background: white;
+            display: inline-block;
+            border: 1px solid white;
+            left:80px;
+        }
+        .center-top-img-top{
+            font-size: 20px;
+            position: absolute;
+            display: inline-block;
+        }
+        .center-top-word-top-a{
+            font-size: 18px;
+            color: gray;
+            position: relative;
+            top: 30px;
+            left: 10px;
+        }
+        .center-bottom{
+            position: relative;
+            background: white;
+            top: 800px;
+            height: 450px;
+            width: 100%;
+            display: inline-block;
+            opacity: 0.8;
+        }
+        .footer-top{
+            position: relative;
+            background: lightgray;
+            top: 800px;
+            height: 850px;
+            width: 100%;
+            display: inline-block;
+        }
+        .footer-top-img-top{
+            font-size: 20px;
+            position: absolute;
+            display: inline-block;
+        }
+        .footer-top-word-top{
+            height: 330px;
+            width:320px;
+            position: relative;
+            top: 80px;
+            background: white;
+            display: inline-block;
+            border: 1px solid white;
+            left:80px;
+        }
+        .footer-bottom{
+            position: relative;
+            background: dimgray;
+            top: 800px;
+            height: 400px;
+            width: 100%;
+            display: inline-block;
+        }
+        .foot-bottom-img1{
+            position: relative;
+            top:60px;
+            left: 150px;
+            display: inline-block;
+        }
+        .foot-bottom-img2{
+            position: relative;
+            top:35px;
+            left: 170px;
+            display: inline-block;
+            color: darkgrey;
+        }
+        .foot-bottom-word1{
+            position: relative;
+            top: -40px;
+            left: 190px;
+            display: inline-block;
+            color: darkgrey;
+        }
+        .foot-bottom-word2{
+            position: relative;
+            top: 90px;
+            left: 210px;
+            display: inline-block;
+            color: darkgrey;
+        }
+        .foot-bottom-word3{
+            position: relative;
+            top: 25px;
+            left: 230px;
+            display: inline-block;
+            color: darkgrey;
+        }
+        .foot-bottom-word4{
+            position: relative;
+            top: 5px;
+            left: 250px;
+            display: inline-block;
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="head">
+        <div class="head-top" >
+            <div>
+                <img class="header-img" src="../../resource/img-2/logonew.png"style="width: 100px;height: 40px;" />
+            </div>
+            <div class="head-a">
+                <span class="head-a"class="a">首页</span>
+                <span class="head-a"class="b">酷玩</span>
+                <span class="head-a"class="c">导购</span>
+                <span class="head-a"class="d">试用</span>
+                <span class="head-a"class="e">报告</span>
+            </div>
+            <div>
+                <img class="header-img1" src="../../resource/img-2/search.png" height="26" width="24"/>
+            </div>
+            <div class="header-but">
+                <button type="button" style="color: orange;width: 40px;height: 30px;border-color: orange;background: white">注册</button>
+            </div>
+        </div>
+        <div class="head-bottom">
+            <div>
+                <img src="../../resource/img-2/original.jpg" height="300" width="1920"style="width: 100%"/>
+                <div class="head_word1">幻响小贝HiFi2.1音箱</div>
+                <div class="head_word2">
+                    <div class="h-a">126人申请</div>
+                    <div class="h-b">¥599</div>
+                    <div class="h-c">20台</div>
+                </div>
+                <div class="head_word3">申请时间剩余:13天5小时37分钟</div>
+                <div class="head_word4">立即申请</div>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="center-top">
+            <div style="font-size: 20px;color: black;position: absolute;left: 80px;top: 20px">
+                热门试用
+            </div>
+            <div class="center-top-img">
+                <div style="float:left;margin-left: 0px;margin-top: 240px">
+                    <img src="../../resource/img-2/prev.png" height="78" width="37" />
+                </div>
+                <div class="center-top-word">
+                    <img src="../../resource/img-2/hot9.jpg" height="188" width="320"/>
+                    <div class="center-top-word-a">巴慕达 The Toaster 烤面包机</div>
+                    <div class=" center-top-word-b">¥512</div>
+                    <div class=" center-top-word-b">20台</div>
+                    <div class="center-top-word-c" style="color: orangered;">1392</div>
+                    <div class="center-top-word-c" style="color: black;">申请</div>
+                    <div class="center-top-word-d">剩余时间2天</div>
+                </div>
+                <div class="center-top-word">
+                    <img src="../../resource/img-2/hot10.jpg" height="188" width="320"/>
+                    <div class="center-top-word-a">Osprey小鹰户外运动专业腰包</div>
+                    <div class=" center-top-word-b">¥512</div>
+                    <div class=" center-top-word-b">20台</div>
+                    <div class="center-top-word-c" style="color: orangered;">1392</div>
+                    <div class="center-top-word-c" style="color: black;">申请</div>
+                    <div class="center-top-word-d">剩余时间2天</div>
+                </div>
+                <div class="center-top-word">
+                    <img src="../../resource/img-2/hot11.jpg" height="188" width="320"/>
+                    <div class="center-top-word-a">Liquid Image 338 运动摄像眼镜</div>
+                    <div class=" center-top-word-b">¥512</div>
+                    <div class=" center-top-word-b">20台</div>
+                    <div class="center-top-word-c" style="color: orangered;">1392</div>
+                    <div class="center-top-word-c" style="color: black;">申请</div>
+                    <div class="center-top-word-d">剩余时间2天</div>
+                </div>
+                <div class="center-top-word">
+                    <img src="../../resource/img-2/hot12.jpg" height="188" width="320"/>
+                    <div class="center-top-word-a">巴慕达 The Toaster 烤面包机</div>
+                    <div class=" center-top-word-b">¥512</div>
+                    <div class=" center-top-word-b">20台</div>
+                    <div class="center-top-word-c" style="color: orangered;">1392</div>
+                    <div class="center-top-word-c" style="color: black;">申请</div>
+                    <div class="center-top-word-d">剩余时间2天</div>
+                </div>
+                <div style="float: right;margin-left: 70px;;margin-top: 240px">
+                    <img src="../../resource/img-2/next.png" height="78" width="37"/>
+                </div>
+            </div>
+        </div>
+        <div class="center-center">
+            <div style="font-size: 22px;color: black;position: absolute;left: 80px;top:20px;font-weight: bold">
+                报告精选
+            </div>
+            <div class="center-top-img-top">
+                <div class="center-top-word-top">
+                    <img src="../../resource/img-2/re1.jpg" height="188" width="319"/>
+                    <div style="position: relative;top: 10px;left: 8px">空气净化器里面学问多得惊呆你，你选对了吗？</div>
+                    <div class="center-top-word-top-a">● 苏苏</div>
+                    <div style="color: gray;position:relative;left: 230px">
+                        <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                        <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                    </div>
+                </div>
+                <div class="center-top-word-top">
+                    <img src="../../resource/img-2/re2.jpg" height="188" width="320"/>
+                    <div style="position: relative;top: 10px;left: 8px">怎么骑都不会累的智能自行车：云马 C1试骑体验</div>
+                    <div class="center-top-word-top-a">● 好吗</div>
+                    <div style="color: gray;position:relative;left: 230px">
+                        <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                        <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                    </div>
+                </div>
+                <div class="center-top-word-top">
+                    <img src="../../resource/img-2/re3.jpg" height="188" width="319"/>
+                    <div style="position: relative;top: 10px;left: 8px">声音不是最优秀，但它形音完美的结合，足够打动人心</div>
+                    <div class="center-top-word-top-a">● iAra</div>
+                    <div style="color: gray;position:relative;left: 230px">
+                        <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                        <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                    </div>
+                </div>
+                <div class="center-top-word-top">
+                    <img src="../../resource/img-2/re4.jpg" height="188" width="319"/>
+                    <div style="position: relative;top: 10px;left: 8px">风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器</div>
+                    <div class="center-top-word-top-a">● 苏苏</div>
+                    <div style="color: gray;position:relative;left: 230px">
+                        <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                        <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                    </div>
+                </div>
+                <div class="center-top-word-top">
+                    <img src="../../resource/img-2/re1.jpg" height="188" width="319"/>
+                    <div style="position: relative;top: 10px;left: 8px">空气净化器里面学问多得惊呆你，你选对了吗？</div>
+                    <div class="center-top-word-top-a">● 苏苏</div>
+                    <div style="color: gray;position:relative;left: 230px">
+                        <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                        <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                    </div>
+                </div>
+                <div class="center-top-word-top">
+                    <img src="../../resource/img-2/re2.jpg" height="188" width="320"/>
+                    <div style="position: relative;top: 10px;left: 8px">怎么骑都不会累的智能自行车：云马 C1试骑体验</div>
+                    <div class="center-top-word-top-a">● 好吗</div>
+                    <div style="color: gray;position:relative;left: 230px">
+                        <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                        <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                    </div>
+                </div>
+                <div class="center-top-word-top">
+                    <img src="../../resource/img-2/re3.jpg" height="188" width="319"/>
+                    <div style="position: relative;top: 10px;left: 8px">声音不是最优秀，但它形音完美的结合，足够打动人心</div>
+                    <div class="center-top-word-top-a">● iAra</div>
+                    <div style="color: gray;position:relative;left: 230px">
+                        <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                        <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                    </div>
+                </div>
+                <div class="center-top-word-top">
+                    <img src="../../resource/img-2/re4.jpg" height="188" width="319"/>
+                    <div style="position: relative;top: 10px;left: 8px">风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器</div>
+                    <div class="center-top-word-top-a">● 苏苏</div>
+                    <div style="color: gray;position:relative;left: 230px;">
+                        <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                        <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                    </div>
+                </div>
+            </div>
+            <div class="center-bottom">
+                <div style="font-size: 22px;color: black;position: absolute;left: 80px;top:20px;font-weight: bold">
+                    导购精选
+                </div>
+                <div class="center-top-img-top">
+                    <div class="center-top-word-top">
+                        <div>
+                            <img src="../../resource/img-2/g1.jpg" height="177" width="320"/>
+                            <div style="position: relative;top: 10px;left: 8px">花万元把蜗居秒变“豪宅”？这12件家具就能帮你办到</div>
+                            <br/>
+                            <div style="color: gray;position:relative;left: 230px">
+                                <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                                <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                            </div>
+                        </div>
+                        <div style="position: relative;left: 330px;bottom: 295px">
+                            <img src="../../resource/img-2/g2.jpg" height="180" width="320"/>
+                            <div style="position: relative;top: 10px;left: 8px">到底有没有完美的iPhone手机配件，答案都在这里</div>
+                            <br/>
+                            <div style="color: gray;position:relative;left: 230px">
+                                <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                                <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                            </div>
+                        </div>
+                        <div style="position: relative;left: 660px;bottom: 593px";>
+                            <img src="../../resource/img-2/g3.jpg" height="178" width="320"/>
+                            <div style="position: relative;top: 10px;left: 8px">2016，这8支钢笔够你装逼一整年</div>
+                            <br/>
+                            <div style="color: gray;position:relative;left: 230px">
+                                <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                                <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                            </div>
+                        </div>
+                        <div style="position: relative;left: 1000px;bottom: 861px";>
+                            <img src="../../resource/img-2/g4.jpg" height="178" width="320"/>
+                            <div style="position: relative;top: 10px;left: 8px">他用12年找一把完美 剃须刀，给你2万字终极购买指南</div>
+                            <br/>
+                            <div style="color: gray;position:relative;left: 230px">
+                                <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                                <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-top">
+                    <div style="font-size: 22px;color: black;position: absolute;left: 80px;top:20px;font-weight: bold">
+                        发现酷玩
+                    </div>
+                    <div class="footer-top-img-top">
+                        <div class="footer-top-word-top" style="position: relative;top: 52px">
+                            <img src="../../resource/img-2/k1.jpg" height="160" width="320" />
+                            <div style="position: relative;top: 10px;left: 8px">SCiO 微型光谱仪可以测定食物成分及营养</div>
+                            <div class="center-top-word-top-a" style="color: red">¥ 1212</div>
+                            <div style="color: gray;position:relative;left: 230px">
+                                <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                                <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                            </div>
+                        </div>
+                        <div class="footer-top-word-top">
+                            <img src="../../resource/img-2/k2.jpg" height="188" width="319"/>
+                            <div style="position: relative;top: 10px;left: 8px">怎么骑都不会累的智能自行车：云马 C1试骑体验</div>
+                            <div class="center-top-word-top-a" style="color: red">¥ 512</div>
+                            <div style="color: gray;position:relative;left: 230px">
+                                <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                                <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                            </div>
+                        </div>
+                        <div class="footer-top-word-top">
+                            <img src="../../resource/img-2/k3.jpg" height="188" width="319"/>
+                            <div style="position: relative;top: 10px;left: 8px">声音不是最优秀，但它形音完美的结合，足够打动人心</div>
+                            <div class="center-top-word-top-a" style="color: red">¥ 暂无</div>
+                            <div style="color: gray;position:relative;left: 230px">
+                                <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                                <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                            </div>
+                        </div>
+                        <div class="footer-top-word-top">
+                            <img src="../../resource/img-2/k4.jpg" height="188" width="319"/>
+                            <div style="position: relative;top: 10px;left: 8px">风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器</div>
+                            <div class="center-top-word-top-a" style="color: red">¥ 433</div>
+                            <div style="color: gray;position:relative;left: 230px">
+                                <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                                <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                            </div>
+                        </div>
+                        <div class="footer-top-word-top">
+                            <img src="../../resource/img-2/k1.jpg" height="160" width="320"/>
+                            <div style="position: relative;top: 10px;left: 8px">空气净化器里面学问多得惊呆你，你选对了吗？</div>
+                            <div class="center-top-word-top-a" style="color: red">¥ 1212</div>
+                            <div style="color: gray;position:relative;left: 230px">
+                                <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                                <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                            </div>
+                        </div>
+                        <div class="footer-top-word-top">
+                            <img src="../../resource/img-2/k2.jpg" height="160" width="320"/>
+                            <div style="position: relative;top: 10px;left: 8px">怎么骑都不会累的智能自行车：云马 C1试骑体验</div>
+                            <div class="center-top-word-top-a" style="color: red">¥ 512</div>
+                            <div style="color: gray;position:relative;left: 230px">
+                                <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                                <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                            </div>
+                        </div>
+                        <div class="footer-top-word-top" style="position: relative;top: 106px">
+                            <img src="../../resource/img-2/k3.jpg" height="188" width="319"/>
+                            <div style="position: relative;top: 10px;left: 8px">声音不是最优秀，但它形音完美的结合，足够打动人心</div>
+                            <div class="center-top-word-top-a" style="color: red">¥ 暂无</div>
+                            <div style="color: gray;position:relative;left: 230px">
+                                <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                                <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                            </div>
+                        </div>
+                        <div class="footer-top-word-top" style="position: relative;top: 106px">
+                            <img src="../../resource/img-2/k4.jpg" height="188" width="319"/>
+                            <div style="position: relative;top: 10px;left: 8px">风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器</div>
+                            <div class="center-top-word-top-a" style="color: red">¥ 433</div>
+                            <div style="color: gray;position:relative;left: 230px;">
+                                <img src="../../resource/img-2/zan.png" height="20" width="20"/>3
+                                <img src="../../resource/img-2/aixing.png" height="20" width="20"/>3
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <div class="foot-bottom-img1">
+                            <img src="../../resource/img-2/code.png" height="180" width="180"/>
+                        </div>
+                        <div class="foot-bottom-img2">
+                            <img src="../../resource/img-2/logoImg.jpg" height="46" width="121"/>
+                            <div>全球酷玩试用导购平台</div>
+                            <div>酷·新奇·好玩·品质</div>
+                            <br/>
+                            <div>微信添加"JguoJguo"</div>
+                            <div>获取我们的服务</div>
+                        </div>
+                        <div class="foot-bottom-word1">
+                            <div style="color: white;font-size: 20px">免费试用</div>
+                            <br>
+                            <div>试用流程</div>
+                            <div>如何提高成功率</div>
+                        </div>
+                        <div class="foot-bottom-word2">
+                            <div style="color: white;font-size: 20px">友情链接</div>
+                            <br>
+                            <div>智东西 &#12288;&#12288;WEIBUSI</div>
+                            <div>搜狐IT &#12288;&#12288;腾讯体育 </div>
+                            <div>搜狐数码 &#12288;凤凰体育</div>
+                            <div>凤凰数码 &#12288;PConline</div>
+                            <div>泡泡网 &#12288;&#12288; 3Wka咖啡</div>
+                            <div>ZUK社区 &#12288; 亿觅emie</div>
+                            <div>极客公园 &#12288;易迅易启玩</div>
+                            <div>果库</div>
+                        </div>
+                        <div class="foot-bottom-word3">
+                            <div style="color: white;font-size: 20px">购买攻略</div>
+                            <br>
+                            <div>美亚海淘教程</div>
+                            <div>日亚海淘教程</div>
+                            <div>淘淘转运攻略</div>
+                            <div>kickstart 众筹购买攻略</div>
+                            <div>indiegogo 众筹购买攻略</div>
+                        </div>
+                        <div class="foot-bottom-word4">
+                            <div style="color: white;font-size: 20px">厂商合作</div>
+                            <br>
+                            <div>关于极果</div>
+                            <div>联系我们</div>
+                            <div>商务合作：BD@jiguo.com</div>
+                            <div>CEO邮箱：CEO@jiguo.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>
