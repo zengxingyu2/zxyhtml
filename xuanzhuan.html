@@ -18,11 +18,12 @@
             transition: all 3s;
             animation-name:change;
             animation-duration:5s;
-            animation-timing-function:linear;
+            animation-timing-function:ease;
             animation-delay:1s;
             animation-iteration-count:infinite;
             animation-direction:alternate;
             animation-play-state:running;
+            transition:cubic-bezier(.11,1.1,.07,-0.33);
         }
         .outer:hover{
             transform: rotateX(330deg) rotateY(350deg);
@@ -60,19 +61,18 @@
         }
         @keyframes change
         {
-            from {
+            0% {
                 transform: rotateX(0deg) rotateY(0deg);
+                left: 200px;
+                top: 100px;
             }
-            to {
+            100% {
                 transform: rotateX(360deg) rotateY(360deg);
+                left: 600px;
+                height: 500px;
             }
         }
 
-        /*.item6:hover{*/
-        /*transform-origin: 50% 0%;*/
-        /*transform: translateZ(150px) rotateX(90deg);*/
-        /**/
-        /*}*/
     </style>
 </head>
 <body>
